@@ -1,6 +1,3 @@
-import javax.swing.*;
-import java.awt.*;
-
 public class Main {
     public static void main(String[] args) {
         Circle circle = new Circle(200);
@@ -16,13 +13,6 @@ public class Main {
         System.out.println("Периметр треугольника = " + triangle.Perimetr());
         System.out.println("Площадь треугольника = " + triangle.Area());
 
-
-        Color bgColor = new Color(100, 250, 150);
-        Color bColor = new Color(0, 0, 0);
-
-        circle.show(bgColor, bColor);
-        square.show(bgColor, bColor);
-        triangle.show(bgColor, bColor);
 
     }
 }

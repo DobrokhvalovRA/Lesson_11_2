@@ -1,6 +1,3 @@
-import javax.swing.*;
-import java.awt.*;
-
 public class Square implements Figures {
     private String color_Border;
     private String color_Background;
@@ -27,27 +24,4 @@ public class Square implements Figures {
         this.color_Border = color;
     }
 
-    public void show(Color bkgColor, Color bColor) {
-
-        JFrame frame = new JFrame("Рисуем квадрат.");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 400);
-        JPanel panel = new JPanel() {
-            @Override
-            public void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                g.setColor(bkgColor);
-                g.fillRect(100, 50, width, height);
-                g.setColor(bColor);
-                g.drawRect(100, 50, width, height);
-
-            }
-        };
-
-        Label label = new Label("Квадрат: " + " Площадь - " + this.Area() + " Периметр - " + this.Perimetr());
-        panel.add(label);
-        frame.add(panel);
-        frame.setVisible(true);
-
-    }
 }
